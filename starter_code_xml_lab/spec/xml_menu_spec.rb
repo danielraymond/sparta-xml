@@ -15,14 +15,6 @@ describe "XML menu" do
   end
 
   it "should have no item with calories over 1000 except for the full breakfast" do
-
-    # @xml_menu.get_all_food_items.each do |i|
-    #   if i[0] == "Full Breakfast"
-    #     expect(i[3].to_i).to be > 1000
-    #   else
-    #     expect(i[3].to_i).to be < 1000
-    #   end
-    # end
     @xml_menu.get_all_food_items.each do |i|
       if i.element_children[0].text == 'Full Breakfast'
         expect(i.element_children[3].text.to_i).to be > 1000

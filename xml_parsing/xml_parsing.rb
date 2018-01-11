@@ -24,5 +24,4 @@ end
 
 x = GuiseppesMenu.new
 
-# puts x.get_menu_names[2].text
-puts x.xpath_get_prices
+puts x.get_menu_names[2].text
